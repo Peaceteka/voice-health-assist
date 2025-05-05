@@ -1,45 +1,66 @@
-# Voice-Activated Health Information System
+# Voice Health Assistant
 
-A voice-activated health information system designed to help low-literacy populations access health information, emergency services, and medical advice in their native language.
+A multilingual voice-enabled health assistant that provides health information and guidance in both English and Kiswahili.
 
-## Project Overview
+## Features
 
-This system allows users to:
-- Get health advice through voice commands
-- Access emergency response information
-- Receive healthcare information in their native language
-- Set medication reminders
-- Report health symptoms
+- Voice recognition in English and Kiswahili
+- Real-time health information and guidance
+- Emergency assistance
+- ANC/PNC visit reminders
+- Health consultation history
+- Text-to-speech responses
 
-## Technical Stack
+## Tech Stack
 
-- Voice Recognition: Google Speech-to-Text API
-- NLP: SpaCy/RASA for natural language understanding
-- Backend: Python FastAPI
-- Mobile App: React Native
+### Frontend
+- React with Vite
+- Material-UI for components
+- Web Speech API for voice recognition
+- React Router for navigation
 
-## Project Structure
+### Backend
+- FastAPI
+- spaCy for language processing
+- Python 3.12+
 
+## Setup
+
+### Backend Setup
+```bash
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the server
+cd src/api
+uvicorn main:app --reload
 ```
-voice-health-assist/
-├── src/
-│   ├── api/         # FastAPI backend endpoints
-│   ├── voice/       # Voice recognition components
-│   ├── nlp/         # Natural language processing
-│   ├── data/        # Data models and database
-│   ├── utils/       # Utility functions
-│   ├── models/      # ML models and training
-│   └── tests/       # Unit and integration tests
+
+### Frontend Setup
+```bash
+# Install dependencies
+cd web-app
+npm install
+
+# Start development server
+npm run dev
 ```
 
-## Getting Started
+## Usage
 
-[Development setup instructions will be added]
-
-## License
-
-MIT License
+1. Open the application in your browser
+2. Select your preferred language (English or Kiswahili)
+3. Click the microphone icon and speak your health-related question
+4. Listen to or read the response
 
 ## Contributing
 
 [Contribution guidelines will be added]
+=======
+# voice-health-assist
+ Develop a voice-activated health information system that allows individuals to get health advice, emergency responses, and healthcare information in their native language, using just their voice.
+>>>>>>> 73f657416c9a06e0d2cf44f95ab8250e533f8010
